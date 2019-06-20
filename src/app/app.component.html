@@ -1,5 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="margin: 0 auto;width: 400px;">
+<div style="margin: 0 auto;width: 400px;" infiniteScroll
+      [infiniteScrollDistance]="1"
+      [infiniteScrollThrottle]="50"
+      (scrolled)="generateArray()">
   <h1>
     Welcome to {{ title }}!
   </h1>
